@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 7 ]>    <html class="ie7 oldie"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie8 oldie"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> 
-<html> <!--<![endif]-->
+<html>
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,121 +9,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
-  <body id="top">
-    <div id="header-wrap">
-        <header>
-          <hgroup>
-            <h1><a href="#">RFDev Blog</a></h1>
-            <h3>Programação e Linux</h3>
-          </hgroup>
-          <nav>
-            <ul>
-              <li id="current"><a href="index.html">Home</a><span></span></li>
-              <li><a href="index.html">About</a><span></span></li>
-            </ul>
-          </nav>
+  <body>
 
-          <form id="quick-search" method="get" action="index.html">
-              <fieldset class="search">
-                <label for="qsearch">Search:</label>
-                <input class="tbox" id="qsearch" type="text" name="qsearch" value="Search..." title="Start typing and hit ENTER" />
-                <button class="btn" title="Submit Search">Search</button>
-              </fieldset>
-          </form>
-        <!--/header-->
-        </header>
-    </div>
-
-    <!-- content-wrap -->
-    <div id="content-wrap">
-        <!-- content -->
-        <div id="content" class="clearfix">
-            <!-- main -->
-            <div id="main">
-              <article class="post">
-                <div class="primary">
-                  <h2><a href="index.html">Read Me First</a></h2>
-                  <p class="post-info"><span>filed under</span> <a href="index.html">templates</a>, <a href="index.html">internet</a></p>
-                  <p><a class="more" href="index.html">Continue Reading &raquo;</a></p>
-                </div>
-                <aside>
-                  <p class="dateinfo">JAN<span>31</span></p>
-                  <div class="post-meta">
-                    <h4>Post Info</h4>
-                    <ul>
-                      <li class="user"><a href="#">Erwin</a></li>
-                      <li class="time"><a href="#">12:30 PM</a></li>
-                      <li class="comment"><a href="#">2 Comments</a></li>
-                      <li class="permalink"><a href="#">Permalink</a></li>
-                    </ul>
-                  </div>
-                </aside>
-              </article>
-              <!-- /main -->
-            </div>
-            <!-- sidebar -->
-            <div id="sidebar">
-              <div class="about-me">
-                <h3>Sobre</h3>
-                <p>
-                <a href="index.html"><img src="assets/gravatar.jpg" width="42" height="42" alt="firefox" class="align-left" /></a>
-                Lorem ipsum dolor sit, consectetuer adipiscing. Donec libero. Suspendisse bibendum.
-                Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu
-                posuere nunc justo tempus leo suspendisse bibendum. <a href="index.html">Learn more...</a>
-                </p>
-              </div>
-              <div class="sidemenu">
-                <h3>Menu</h3>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="index.html#TemplateInfo">TemplateInfo</a></li>
-                  <li><a href="style.html">Style Demo</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="archives.html">Archives</a></li>
-                  <li><a href="http://themeforest.net?ref=ealigam" title="Web Templates">Web Templates</a></li>
-                </ul>
-              </div>
-              <div class="sidemenu popular">
-                <h3>Popular</h3>
-                <ul>
-                  <li><a href="index.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    <span>Posted on December 22, 2010</span></a>
-                  </li>
-                  <li><a href="index.html">Cras fringilla magna. Phasellus suscipit.
-                    <span>Posted on December 20, 2010</span></a>
-                  </li>
-                  <li><a href="index.html">Morbi tincidunt, orci ac convallis aliquam.
-                    <span>Posted on December 15, 2010</span></a>
-                  </li>
-                  <li><a href="index.html">Ipsum dolor sit amet, consectetuer adipiscing elit.
-                    <span>Posted on December 14, 2010</span></a>
-                  </li>
-                  <li><a href="index.html">Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem
-                    <span>Posted on December 12, 2010</span></a>
-                  </li>
-                </ul>
-              </div>
-              <!-- /sidebar -->
-            </div>
-            <!-- content -->
-        </div>
-        <!-- /content-out -->
-    </div>
-    <!-- extra -->
-    <div id="extra-wrap"><div id="extra" class="clearfix">
-    </div>
-    <!-- /extra -->
-    <!-- footer -->
-    <footer>
-      <p class="footer-left">
-      &copy; 2011 Copyright Info &nbsp; &nbsp; &nbsp;
-      Design by <a href="http://www.styleshout.com/">styleshout</a>
-      </p>
-      <p class="footer-right">
-      <a href="index.html">Home</a> |
-      <a href="#top" class="back-to-top">Back to Top</a>
-      </p>
-      <!-- /footer -->
-    </footer>
   </body>
 </html>
