@@ -21,7 +21,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to @post, notice: 'Pessoa cadastrada com sucesso.' }
+        format.html { redirect_to @post, notice: 'Post cadastrado com sucesso.' }
         format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new }
@@ -33,11 +33,11 @@ class PostsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
-      @pessoa = Pessoa.find(params[:id])
+      @post = Post.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post)
+      params.require(:post).permit(:titulo,:texto)
     end
 end
