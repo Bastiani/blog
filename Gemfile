@@ -15,6 +15,7 @@ gem 'devise'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
 gem 'will_paginate', '~> 3.0.6'
+gem 'friendly_id'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]

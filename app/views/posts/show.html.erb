@@ -1,0 +1,11 @@
+  <h2>
+    <%= @post.titulo %>
+  </h2>
+  <p class="lead">
+  by <%= @post.user.name %>
+  </p>
+  <p><span class="glyphicon glyphicon-time"></span> <%= @post.created_at %> </p>
+  <hr>
+  <p><%= @post.texto.html_safe %></p>
+
+  <hr>

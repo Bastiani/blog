@@ -1,15 +1,16 @@
   <% @posts.each do |post| %>
     <h2>
-      <a href="#"><%= post.titulo %></a>
+      <%= link_to "#{ post.titulo }", post_path(post) %>
     </h2>
     <p class="lead">
     by <%= post.user.name %>
     </p>
     <p><span class="glyphicon glyphicon-time"></span> <%= post.created_at %> </p>
     <hr>
-    <p><%= post.texto.html_safe %></p>
-    <a class="btn btn-primary" href="#">Mais...<span class="glyphicon glyphicon-chevron-right"></span></a>
-
+    <p><%=h truncate(post.texto.html_safe, length: 500, escape: false) %></p>
+    <%= link_to post_path(post), class: "btn btn-primary" do %>
+      Mais...<span class="glyphicon glyphicon-chevron-right"></span>
+    <% end %>
     <hr>
   <% end %>
   <%= will_paginate @posts %>
