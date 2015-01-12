@@ -1,0 +1,20 @@
+toolbar:
+  - styleselect | bold italic | undo redo bullist numlist outdent indent
+  - image | link | code print preview media | forecolor backcolor emoticons
+plugins:
+  - image
+  - link
+  - code
+  - advlist
+  - autolink
+  - lists
+  - charmap
+  - print
+  - preview
+  - hr
+  - anchor
+  - pagebreak
+  - searchreplace
+  - textcolor
+  - colorpicker
+  - textpattern
