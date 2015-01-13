@@ -1,16 +1,28 @@
-  <% @posts.each do |post| %>
-    <h2 class="headline-large">
-      <%= link_to "#{ post.titulo }", post_path(post) %>
-    </h2>
-    <p class="headline lead">
-    by <%= post.user.name %>
-    </p>
-    <p><span class="glyphicon glyphicon-time"></span> <%= post.created_at %> </p>
-    <hr>
-    <p class="conteudo"><%= truncate_html(post.texto.html_safe) %></p>
-    <%= link_to post_path(post), class: "btn btn-primary" do %>
-      Mais...<span class="glyphicon glyphicon-chevron-right"></span>
-    <% end %>
-    <hr>
-  <% end %>
-  <%= will_paginate @posts %>
+<% @posts.each do |post| %>
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-preview">
+          <%= link_to(post) do %>
+            <h2 class="post-title">
+              <%= post.titulo %>
+            </h2>
+            <h3 class="post-subtitle">
+              <%= post.subtitulo %>
+            </h3>
+          <% end %>
+          <p class="post-meta">Postado por <%= post.user.name %> em <%= post.created_at %></p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+<% end %>
+<!-- Pager -->
+<!--<ul class="pager">
+  <li class="next">
+  <a href="#">Older Posts &rarr;</a>
+  </li>
+</ul>-->
+<%= will_paginate @posts %>
