@@ -16,3 +16,4 @@
 //= require bootstrap-sprockets
 //= require tinymce-jquery
 //= require_tree .
+hljs.initHighlightingOnLoad();
