@@ -14,7 +14,7 @@
   </div>
 </header>
 
-<% @posts.each do |post| %>
+<% @posts.order('id desc').each do |post| %>
   <!-- Main Content -->
   <div class="container">
     <div class="row">
@@ -35,10 +35,12 @@
     </div>
   </div>
 <% end %>
-<!-- Pager -->
-<!--<ul class="pager">
-  <li class="next">
-  <a href="#">Older Posts &rarr;</a>
-  </li>
-</ul>-->
-<%= will_paginate @posts %>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+      <div class="digg_pagination">
+        <%= will_paginate @posts, :container => false %>
+      </div>
+    </div>
+  </div>
+</div>
