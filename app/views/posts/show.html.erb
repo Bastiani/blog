@@ -1,3 +1,10 @@
+<% content_for :title do %>
+  <%= @post.titulo %>
+<% end %>
+<% content_for :description do %>
+  <%= @post.subtitulo %>
+<% end %>
+
   <!-- Page Header -->
   <!-- Set your background image for this header on the line below. -->
   <header class="intro-header" style="background-image: url(<%= request.protocol %><%= request.host_with_port %>/assets/post-bg.jpg)">
