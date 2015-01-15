@@ -38,7 +38,7 @@ class PaginasController < ApplicationController
 
   private
     def set_pagina
-      @pagina = Pagina.find(params[:id])
+      @pagina = Pagina.friendly.find(params[:id])
     end
 
     def pagina_params
