@@ -5,9 +5,9 @@
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
 <% if @pagina.titulo == "Sobre" %>
-  <header class="intro-header" style="background-image: url(<%= request.protocol %><%= request.host_with_port %>/assets/about-bg.jpg)">
+  <header class="intro-header" style="background-image: url(<%= asset_path 'about-bg.jpg' %>)">
 <% else %>
-  <header class="intro-header" style="background-image: url(<%= request.protocol %><%= request.host_with_port %>/assets/paginas.jpg)">
+  <header class="intro-header" style="background-image: url(<%= asset_path 'paginas.jpg' %>)">
 <% end %>
   <div class="container">
     <div class="row">
