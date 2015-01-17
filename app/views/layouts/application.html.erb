@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Blog" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Blog" %>">
+    <title><%= content_for?(:title) ? yield(:title) : "RFDev Blog" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "RFDev Blog" %>">
     <meta name="thumbnail" content="<%= asset_path 'thumbnail.png' %>" />
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/monokai.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -77,7 +80,5 @@
         </div>
       </div>
     </footer>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54b6fa6119280761" async="async"></script>
   </body>
 </html>

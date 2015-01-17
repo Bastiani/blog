@@ -26,6 +26,7 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           <%= @post.texto.html_safe %>
+          <br />
           <!-- Go to www.addthis.com/dashboard to customize your tools -->
           <div class="addthis_sharing_toolbox"></div>
           <div id="disqus_thread"></div>
@@ -35,12 +36,12 @@
   </article>
 
   <hr>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54b6fa6119280761" async="async"></script>
   <%= javascript_tag "
-  $(document).ready(function() {
-    $('pre code').each(function(i, block) {
-      hljs.highlightBlock(block);
-    });
-  });
+  hljs.configure({useBR: true});
+  $('code').each(function(i, e) {hljs.highlightBlock(e)});
+
   /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
   var disqus_shortname = 'rfdev'; // required: replace example with your forum shortname
 

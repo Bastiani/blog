@@ -28,9 +28,10 @@
           <%#=f.error_span(:titulo) %>
         </div>
         <div class="col-sm-7">
-          <%= f.label :texto, :class => 'control-label' %>
-          <%= f.cktext_area :texto, :class => 'form_control', :ckeditor => {:language => 'pt-br'} %>
+          <%#= f.label :texto, :class => 'control-label' %>
+          <%= f.cktext_area :texto, :class => 'form_control', :ckeditor => {:toolbar => 'Full'} %>
           <%#=f.error_span(:texto) %>
+          <%#= f.input :texto, :as => :ckeditor, :input_html => { :ckeditor => {:toolbar => 'Full'} } %>
         </div>
       </div>
     </div>
