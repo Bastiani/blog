@@ -29,7 +29,7 @@
         </div>
         <div class="col-sm-7">
           <%= f.label :texto, :class => 'control-label' %>
-          <%= f.text_area :texto, :class => 'form-control tinymce' %>
+          <%= f.cktext_area :texto, :class => 'form_control', :ckeditor => {:language => 'pt-br'} %>
           <%#=f.error_span(:texto) %>
         </div>
       </div>
@@ -42,4 +42,3 @@
     </div>
   </div>
 <% end %>
-<%= tinymce %>

@@ -14,6 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require tinymce-jquery
+//= require ckeditor/init
 //= require_tree .
 hljs.initHighlightingOnLoad();
